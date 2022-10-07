@@ -1,0 +1,222 @@
+
+
+/*Resettiamo a zero tutto*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*Stile per gli elementi di base liste nav e altro*/
+a{
+    text-decoration: none;
+    color:white;
+    margin-right: 10px;
+}
+
+#navbar li {
+    text-decoration-line: none;
+    font-weight: bold;
+    list-style: none;
+    border: 0px solid ;
+    padding:20px 20px 20px 20px;
+}
+
+.nav-content:hover{
+    background-color: black;
+}
+
+/*Fissiamo header*/
+
+header{
+    width: 100vw;
+    position: fixed;
+    top:0;
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    background-color: orangered;
+    
+}
+
+/*Fissiamo la NavBar*/
+
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Posizioniamo la presenteazione al centro*/
+
+.welcome{
+    width: 100%;
+    height: 625px;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100% );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1{
+    font-size: 3rem;
+    color:white;
+}
+.welcome p{
+    font-size: 2.5rem;
+    color:white;
+}
+
+
+/*modelliamo la sezione progetti*/
+
+.projects-section{
+    width:100%;
+    height:1200px;
+    background: rgb(95, 95, 221);
+}
+.projects-section h2{
+    font-size: 3rem;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-decoration:underline;
+    text-align: center;
+}
+
+/*Disponiamo i  progetti in una griglia 2x2*/
+
+.projects-container{
+    display: grid;
+    grid-template-rows:repeat(2,auto);
+    grid-template-columns:repeat(2,auto);
+    grid-row-gap:40px;
+    grid-column-gap:60px;
+    justify-content: center;
+}
+
+.img-project{
+    border: 1px solid black;
+}
+
+/*Modifichiamo lo stile per il titolo dei progetti*/
+
+.project-name{
+    padding: 20px 20px;
+    align-items: center;
+    border-radius: 3px;
+}
+p.project-name{
+    text-align: center;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.project-tile{
+  background: #303841;
+  box-shadow: 1px 1px 2px #303841;
+  border-radius: 2px;
+}
+
+.code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+    padding-right:4px;
+    padding-left: 4px;
+  }
+
+.project-tile:hover .code{
+    color:#ff7f50;
+}
+
+
+/*modelliamo la sezione contatti*/
+
+.contact{
+    width:100%;
+    height:600px;
+    background:linear-gradient(62deg, #3a3d40 0%, #181719 100% ); 
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+}
+.contact h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color:white;
+    margin:100px;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    align-content:space-between;
+    flex-wrap: nowrap;
+  
+}
+
+a.icon-btn{
+    padding:10px;
+    margin-right:20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+
+}
+
+.fab{
+    font-size: 1.5rem ;
+    color: white;
+}
+.fas{
+    font-size: 1.5rem ;
+    color:white;
+}
+.text_icon{
+    margin-left: 20px;
+    color:white;
+}
+
+/*Aniamiamo le icone dei contatti*/
+.icon-btn:hover{
+    transform:translateY(-4px);
+}
+
+footer{
+    height: 100px;
+    background:linear-gradient(62deg, #3a3d40 0%, #181719 100% );
+
+}
+hr{
+    height: 5px;
+    background-color: orangered;
+    border: 0;
+}
+.end{
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+/*Aggiungiamo una media query per le griglie*/
+
+@media screen and (max-width:500px) {
+
+.projects-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+.projects-section{
+    width:auto;
+    height:auto;
+    padding-bottom: 10px;
+    
+}
+}
