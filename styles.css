@@ -74,8 +74,9 @@ nav > ul{
 
 .projects-section{
     width:100%;
-    height:1200px;
+    height:1300px;
     background: #45567d;
+    
 }
 .projects-section h2{
     font-size: 3rem;
@@ -130,6 +131,31 @@ p.project-name{
 
 .project-tile:hover .code{
     color:#ff7f50;
+}
+
+/*Diamo lo stile e il layout per il bottone al termine della sezione progetti*/
+.btn {
+    display:block;
+    margin:50px auto;
+    width: 100px;
+    padding: 20px 15px;
+    border-radius: 3px;
+
+}
+
+.btn-show-all{
+    background:#303841 ;
+    text-align: center;
+    font-size:1.4rem ;
+}
+
+.btn-show-all:hover{
+    background:#be3144;
+    
+}
+
+.btn-show-all:hover > i{
+    transform: translateX(2px);
 }
 
 
@@ -193,7 +219,7 @@ a.icon-btn{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content:space-between;
     background:linear-gradient(62deg, #3a3d40 0%, #181719 100% );
     border-top: 5px solid #be3144;
     height: 100px;
@@ -205,7 +231,8 @@ footer{
     color:white;
     font-size: 1.2rem;
     margin-right: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
 }
 
 
@@ -256,4 +283,3 @@ p.text_icon{
 
 
 }
-
